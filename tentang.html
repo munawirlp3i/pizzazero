@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Zero</title>
+</head>
+
+<body id="body">
+    <nav>
+        <ul>
+            <li style="float: left;" class="logo"><a href="index.html">Pizza Zero</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <!-- <li><a href="#">Pemesanan</a></li> -->
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <!-- <li style="float: right;"><a href="#">Login</a></li> -->
+        </ul>
+    </nav>
+    <header>
+        <!-- <img src="/img/banner.jpg" alt=""> -->
+        <!-- <div class="opacity"></div> -->
+        <!-- <h2>Welcome To Pizza Zero</h2> -->
+
+    </header>
+
+    <main>
+        <a href="#body">
+            <div id="btn-totop">^</div>
+        </a>
+        <div class="column">
+            <div class="card-about">
+                <h2>Tentang Website</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolores enim architecto at sequi
+                    maxime dicta aliquam quisquam non laborum.</p>
+            </div>
+            <div class="card-about">
+                <h2>Tentang Pizza</h2>
+                <p>Piza (menurut KBBI) (atau pizza) adalah hidangan gurih dari Italia sejenis adonan bundar dan pipih,
+                    yang dipanggang di oven dan biasanya dilumuri saus tomat serta keju dengan bahan makanan tambahan
+                    lainnya yang bisa dipilih. Keju yang dipakai biasanya mozzarella atau "keju pizza", bisa juga keju
+                    parmesan dan beberapa keju lainnya.
+
+                    Jenis bahan lain juga dapat ditaruh di atas pizza, biasanya daging dan saus, seperti salami dan
+                    pepperoni, ham, bacon, buah seperti nanas dan zaitun, sayuran seperti cabe dan paprika, dan juga
+                    bawang bombay, jamur dan lain lain.
+
+                    Rotinya biasa dibuat seperti roti biasa namun bisa diberi rasa tambahan dengan mentega, bawang
+                    putih, tanaman herbal, atau wijen. Pizza biasanya dibuat dengan memutar-mutarkan adonan roti yang
+                    menjadi pipih. Hal tersebut juga sering dijadikan atraksi bagi beberapa toko Pizzeria. Pizza
+                    biasanya dimakan selagi panas (biasanya untuk makan siang dan malam), tetapi ada pula yang disajikan
+                    dingin, biasanya dimakan untuk sarapan atau saat piknik.
+
+                    Pizza biasanya dimakan di restoran, dibeli di pasar grosir atau supermarket, dan dapat pula dipesan
+                    melalui telepon atau ini melalui web untuk diantar, panas dan siap untuk disantap di rumah.
+
+                    Kata "pizza" diambil dari bahasa Italia pizza (Alfabet Fonetik Internasional / International
+                    Phonetic Alphabet, IPA: [ˈpiːtsə]), biasanya berarti "pai, kue, tart". Banyak yang salah mengira
+                    bahwa pizza berasal dari kata Italia yang berarti phai (pie)</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>Created By Munawir</h4>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btn-totop").style.display = "flex";
+            } else {
+                document.getElementById("btn-totop").style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

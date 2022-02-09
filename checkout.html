@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Zero</title>
+</head>
+
+<body id="body">
+    <nav>
+        <ul>
+            <li style="float: left;" class="logo"><a href="index.html">Pizza Zero</a></li>
+            <li><a href="tentang.html?data=gan">Tentang</a></li>
+            <!-- <li><a href="#">Pemesanan</a></li> -->
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <!-- <li style="float: right;"><a href="#">Login</a></li> -->
+        </ul>
+    </nav>
+    <header>
+        <!-- <img src="img/banner.jpg" alt=""> -->
+        <!-- <div class="opacity"></div> -->
+        <!-- <h2>Welcome To Pizza Zero</h2> -->
+
+    </header>
+
+    <main>
+        <a href="#body"><div id="btn-totop">^</div></a>
+        <h2 id="tampil">Checkout</h2>
+        <hr>
+        <div class="column">
+            <div class="card-menu" style="width: 500px;">
+                <h3>Item Order</h3>
+                <img src="img/american_favourite.jpg" alt="" style="width: 60%;">
+                <h4>Detail Transaksi</h4>
+                <hr>
+                
+                   <div class="card-menu-item">
+                        <span style="text-align: end;">
+                            <h5>Pizza  : </h5>
+                            <h5>Ongkir : </h5>
+                        </span>
+                        <span>
+                            <h5 id="harga">Pizza</h5>
+                            <h5>20.000</h5>
+                        </span>
+                   </div>
+                   <hr style="width: 90%;">
+                   <div class="card-menu-item">
+                        <h4>Total</h4>
+                        <h4 id="total">70.000</h4>
+                   </div>
+                   <div class="card-menu-item">
+                       <a href="" class="btn">Bayar</a>
+                   </div>
+                   
+                </div>
+                
+        </div>
+    </main>
+    <footer>
+        <h4>Created By Munawir</h4>
+    </footer>
+
+    <script>
+        let harga = window.location.search.substring(6).split('&')[1];
+        let gambar = window.location.search.substring(6).split('&')[0]
+        document.getElementsByTagName("img")[0].setAttribute('src', "img/"+ gambar);
+        document.getElementById("harga").innerHTML = harga.slice(0, 2) + '.' + harga.slice(2, 5);
+        let total = parseInt(harga) + 20000;
+        document.getElementById('total').innerHTML = total;
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btn-totop").style.display = "flex";
+            } else {
+                document.getElementById("btn-totop").style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

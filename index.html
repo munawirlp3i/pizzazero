@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Zero</title>
+</head>
+
+<body id="body">
+    <nav>
+        <ul>
+            <li style="float: left;" class="logo"><a href="index.html">Pizza Zero</a></li>
+            <li><a href="tentang.html?data=gan">Tentang</a></li>
+            <!-- <li><a href="#">Pemesanan</a></li> -->
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <!-- <li style="float: right;"><a href="#">Login</a></li> -->
+        </ul>
+    </nav>
+    <header>
+        <img src="img/banner.jpg" alt="">
+        <div class="opacity"></div>
+        <h2>Welcome To Pizza Zero</h2>
+
+    </header>
+
+    <main>
+        <a href="#body"><div id="btn-totop">^</div></a>
+        <h2>Recomendation</h2>
+        <hr>
+        <div class="column">
+            <div class="card-menu">
+                <a href="checkout.html?data=american_favourite.jpg&50000">
+                    <img src="img/american_favourite.jpg" alt="">
+                </a>
+                <div class="card-menu-item">
+                    <h3>Harga: <br> RP 50.000</h3>
+                    <a href="checkout.html?data=american_favourite.jpg&50000" class="btn">PESAN</a>
+                </div>
+            </div>
+            <div class="card-menu">
+                <a href="checkout.html?data=super_supremen.jpg&80000">
+                    <img src="img/super_supremen.jpg" alt="">
+                </a>
+                <div class="card-menu-item">
+                    <h3>Harga: <br> RP 80.000</h3>
+                    <a href="checkout.html?data=super_supremen.jpg&80000" class="btn">PESAN</a>
+                </div>
+            </div>
+            <div class="card-menu">
+                <a href="checkout.html?data=cheeseburger.jpg&70000">
+                    <img src="img/cheeseburger.jpg" alt="">
+                </a>
+                <div class="card-menu-item">
+                    <h3>Harga: <br> RP 70.000</h3>
+                    <a href="checkout.html?data=cheeseburger.jpg&70000" class="btn">PESAN</a>
+                </div>
+            </div>
+        </div>
+        <h2>Popular</h2>
+        <hr>
+        <div id="item" class="column">
+            <div class="card-menu">
+                <a href="checkout.html?data=frankfurter_bbq.jpg&55000">
+                    <img src="img/frankfurter_bbq.jpg" alt="">
+                </a>
+                <div class="card-menu-item">
+                    <h3>Harga: <br> RP 55.000</h3>
+                    <a href="checkout.html?data=frankfurter_bbq.jpg&55000" class="btn">PESAN</a>
+                </div>
+            </div>
+            <div class="card-menu">
+                <a href="checkout.html?data=meat_lovers.jpg&60000">
+                    <img src="img/meat_lovers.jpg" alt="">
+                </a>
+                <div class="card-menu-item">
+                    <h3>Harga: <br> RP 60.000</h3>
+                    <a href="checkout.html?data=meat_lovers.jpg&60000" class="btn">PESAN</a>
+                </div>
+            </div>
+            <div class="card-menu">
+                <a href="checkout.html?data=meat_monsta.jpg&70000">
+                    <img src="img/meat_monsta.jpg" alt="">
+                </a>
+                <div class="card-menu-item">
+                    <h3>Harga: <br> RP 70.000</h3>
+                    <a href="checkout.html?data=meat_monsta.jpg&70000" class="btn">PESAN</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>Created By Munawir</h4>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btn-totop").style.display = "flex";
+            } else {
+                document.getElementById("btn-totop").style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
